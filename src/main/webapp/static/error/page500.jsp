@@ -1,0 +1,32 @@
+<%@ page language="java" import="java.util.*" contentType="text/html;charset=UTF-8" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>错误页面jsp</title>
+    <link rel="stylesheet" type="text/css" href="/static/error/css/dandelion.css" media="screen" />
+</head>
+
+<body>
+<div id="da-wrapper" class="fluid">
+    <div id="da-content">
+        <div class="da-container clearfix">
+            <div id="da-error-wrapper">
+                <div id="da-error-pin"></div>
+                <div id="da-error-code">
+                    error <span>500</span>
+                </div>
+                <h1 class="da-error-heading">
+                    您访问的页面出现异常了！
+                </h1>
+                <p>请返回或稍后再试！</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

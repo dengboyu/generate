@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>自动生成代码</title>
+	<link rel="stylesheet" href="../../../static/common/css/reset.css">
+	<link rel="stylesheet" href="../../../static/plugion/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../static/common/css/public.css">
+	<link rel="stylesheet" href="../css/generate.css">
+</head>
+<body>
+	<div class="container-fluid autoBody">
+		<div class="main row">
+			<div class="code-top col-md-12"><span class="glyphicon glyphicon-film" aria-hidden="true"></span> 自动生成代码</div>
+			<form class="form-inline code-data col-md-11">
+	  			<div class="form-group col-md-5 code-dataBase">
+					<label>数据库:</label>
+					<select class="form-control">
+					    <option value>选择数据库</option>
+					</select>
+				</div>
+				<div class="form-group col-md-5">
+					<label>作&nbsp;&nbsp; 者:</label>
+					<input type="text" class="form-control code-author" placeholder="by@Deng">
+				</div>
+				<div class="form-group col-md-5 code-table">
+					<label>表&nbsp;&nbsp; 名:</label>
+					<select class="form-control">
+					    <option value>选择表名称</option>
+					</select>
+				</div>
+				<div class="form-group col-md-5">
+					<label>模块名:</label>
+					<input type="text" class="form-control code-moduleName" placeholder="建议小写">
+				</div>
+				<div class="form-group col-md-5">
+					<label>类&nbsp;&nbsp; 名:</label>
+					<input type="text" class="form-control className" placeholder="首字母大写">
+				</div>
+				<div class="form-group col-md-7">
+					<label>生成路径:</label>
+					<input type="text" class="form-control code-path">
+					<button type="button" class="btn btn-success code-generate">
+						<span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> 生成代码
+					</button>
+				</div>
+			</form>
+			<div class="code-table-con col-md-12">
+				<table class="table table-bordered code-table-row">
+					<thead style="background:#b7b0af;">
+						<tr>
+							<th>序号</th>
+							<th>字段名</th>
+							<th>实体类属性</th>
+							<th>字段注释</th>
+							<th>Mybatis类型</th>
+							<th>实体类型</th>
+							<th>主键</th>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<!-- <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">标题</h4>
+				</div> -->
+				<div class="modal-body">
+					<!-- 主体 -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info btn-cancel" data-dismiss="modal"><!-- 取消 --></button>
+					<!-- <button type="button" class="btn btn-info btn-ok"> 确定 </button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<script type="text/javascript" src="../../../static/plugion/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../../static/plugion/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../../../static/common/js/public.js"></script>
+	<script type="text/javascript" src="../../../static/utils/commonUtils.js"></script>
+	<script type="text/javascript" src="../js/generate.js"></script>
+</body>
+</html>

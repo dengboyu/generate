@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.generate.code.module.generate.dao.AutoCodeDao">
+
+
+	<!--查询mysql数据库中存在的数据库名称-->
+	<select id="getDatabaseName" resultType="java.lang.String">
+        SHOW DATABASES
+    </select>
+
+	<!--获取数据库对应的表名称-->
+	<select id="getTableNamesByDBName" resultType="java.lang.String">
+        SELECT
+            DISTINCT TABLE_NAME AS tableNames
+        FROM
+            information_schema.COLUMNS IC
+        WHERE
+            IC.TABLE_SCHEMA = #{0}
+    </select>
+
+
+	<!--根据数据库名和表名查询表各个字段-->
+	<select id="getTableColumnsByTableName" parameterType="java.util.Map" resultType="java.util.Map">
+        SELECT
+            IC.COLUMN_NAME columnName,
+            IC.COLUMN_COMMENT annotation,
+            IC.DATA_TYPE mybatisType,
+            IF(IC.COLUMN_KEY ='PRI',1,0) primaryKey
+        FROM
+            information_schema.COLUMNS IC
+        where
+            IC.TABLE_SCHEMA = #{dataBaseName}
+            AND IC.TABLE_NAME = #{tableName}
+    </select>
+
+</mapper>

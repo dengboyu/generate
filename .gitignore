@@ -1,0 +1,5 @@
+# git ignore
+.idea/
+target/
+.DS_Store
+generate.iml

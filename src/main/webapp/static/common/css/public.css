@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+body{
+	font-size:16px;
+	font-family:'PingFangSC-Regular','微软雅黑';
+	background: #F5F6FA;
+}
+label{
+	font-weight: normal;
+	margin-bottom:0;
+	vertical-align: middle;
+}
+button .code-generate:hover{
+	background-color: #5cb85c!important;
+}
+select:hover{
+	cursor: pointer;
+}
