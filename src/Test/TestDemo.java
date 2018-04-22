@@ -9,8 +9,10 @@ public class TestDemo {
 
     @Test
     public void Test(){
-        String a = "1234";
-        System.out.println(StringUtils.substring(a,0));
+
+
+
+
     }
 
 }
