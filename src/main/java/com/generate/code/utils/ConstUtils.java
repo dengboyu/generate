@@ -11,10 +11,10 @@ public class ConstUtils {
 //    public static final String packageBase="com.bypro.future";  //包名
 
     /*****************************国智******************************/
-//    public static final String packageBase="com.gz.evalution";  //包名
+    public static final String packageBase="com.gz.evalution";  //包名
 //    public static final String packageBase="com.tt.association";  //包名
 //    public static final String packageBase="com.leng.sguide";  //包名
-    public static final String packageBase="com.xsh.activity";  //包名
+//    public static final String packageBase="com.xsh.activity";  //包名
 
     public static final String packageName= packageBase + ".module";  //以上两个为类全限定名
     public static final String packageCommonDao= packageBase + ".common.structure.dao.BaseDao";    //公共接口dao
